@@ -1,0 +1,34 @@
+#pragma once
+#include "SysType.h"
+
+extern const Path HIST_PRICE_PATH;
+extern const Path HIST_DIV_PATH;
+extern const Path TRADE_LOG_PATH;
+extern const Path TOTAL_WORTH_LOG_PATH;
+extern const Path STOCK_WORTH_LOG_PATH;
+extern const Path STOCK_RATIO_LOG_PATH;
+extern const Path CAPITAL_GAIN_LOG_PATH;
+extern const Path FIXED_INCOME_LOG_PATH;
+
+enum { DATE, TRADE_DAY, OPEN, HIGH, LOW, CLOSE, ADJ_CLOSE, VOLUMN, DIVIDEND, LAST_DIVIDEND };
+enum { MARKET_ORDER, LIMIT_ORDER, STOP_ORDER };
+
+enum class LogType { BUY, SELL, DIVIDEND, SALARY, MESSAGE };
+enum class BrokerName {
+	NONE,
+	HSBC
+};
+enum class ErrorCode
+{
+	NONE,
+	INVALID_DATE,
+	INVALID_RAWDATE,
+	DATE_OUT_OF_RECORD,
+	FILE_NOT_EXIST,
+	CANNOT_WRITE_FILE,
+	NOT_ENOUGH_CASH,
+	SELL_AMOUNT_EXCEEDED,
+	SELL_UNOWNED_STOCK,
+	NEGATIVE_SALARY,
+	NEGATIVE_DIVIDEND
+};

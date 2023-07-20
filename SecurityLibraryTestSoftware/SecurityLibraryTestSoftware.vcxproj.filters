@@ -1,0 +1,96 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="來源檔案">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="標頭檔">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="資源檔">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="SecurityLibraryTestSoftware.cpp">
+      <Filter>來源檔案</Filter>
+    </ClCompile>
+    <ClCompile Include="AssetLogTest.cpp">
+      <Filter>來源檔案</Filter>
+    </ClCompile>
+    <ClCompile Include="BrokerTest.cpp">
+      <Filter>來源檔案</Filter>
+    </ClCompile>
+    <ClCompile Include="CalendarTest.cpp">
+      <Filter>來源檔案</Filter>
+    </ClCompile>
+    <ClCompile Include="ControlPanelTest.cpp">
+      <Filter>來源檔案</Filter>
+    </ClCompile>
+    <ClCompile Include="DataReaderTest.cpp">
+      <Filter>來源檔案</Filter>
+    </ClCompile>
+    <ClCompile Include="ErrorPacketTest.cpp">
+      <Filter>來源檔案</Filter>
+    </ClCompile>
+    <ClCompile Include="IndexTest.cpp">
+      <Filter>來源檔案</Filter>
+    </ClCompile>
+    <ClCompile Include="MarketTest.cpp">
+      <Filter>來源檔案</Filter>
+    </ClCompile>
+    <ClCompile Include="PortfolioTest.cpp">
+      <Filter>來源檔案</Filter>
+    </ClCompile>
+    <ClCompile Include="ProfitLogTest.cpp">
+      <Filter>來源檔案</Filter>
+    </ClCompile>
+    <ClCompile Include="ShareTest.cpp">
+      <Filter>來源檔案</Filter>
+    </ClCompile>
+    <ClCompile Include="TradeLogTest.cpp">
+      <Filter>來源檔案</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="DataReaderTest.h">
+      <Filter>標頭檔</Filter>
+    </ClInclude>
+    <ClInclude Include="ErrorPacketTest.h">
+      <Filter>標頭檔</Filter>
+    </ClInclude>
+    <ClInclude Include="AssetLogTest.h">
+      <Filter>標頭檔</Filter>
+    </ClInclude>
+    <ClInclude Include="BrokerTest.h">
+      <Filter>標頭檔</Filter>
+    </ClInclude>
+    <ClInclude Include="CalendarTest.h">
+      <Filter>標頭檔</Filter>
+    </ClInclude>
+    <ClInclude Include="ControlPanelTest.h">
+      <Filter>標頭檔</Filter>
+    </ClInclude>
+    <ClInclude Include="IndexTest.h">
+      <Filter>標頭檔</Filter>
+    </ClInclude>
+    <ClInclude Include="MarketTest.h">
+      <Filter>標頭檔</Filter>
+    </ClInclude>
+    <ClInclude Include="PortfolioTest.h">
+      <Filter>標頭檔</Filter>
+    </ClInclude>
+    <ClInclude Include="ProfitLogTest.h">
+      <Filter>標頭檔</Filter>
+    </ClInclude>
+    <ClInclude Include="ShareTest.h">
+      <Filter>標頭檔</Filter>
+    </ClInclude>
+    <ClInclude Include="TradeLogTest.h">
+      <Filter>標頭檔</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
