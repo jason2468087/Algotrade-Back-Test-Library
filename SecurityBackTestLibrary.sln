@@ -7,16 +7,9 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SecurityBackTestLibrary", "
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SecurityLibraryTestSoftware", "SecurityLibraryTestSoftware\SecurityLibraryTestSoftware.vcxproj", "{7D6FAEF8-526A-452B-B8ED-1697637499F9}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "AssetBalancePortfolio", "SecurityBackTestPlatform\SecurityBackTestPlatform.vcxproj", "{C5CA5006-C4DF-40A2-B88D-61D50C20D9FE}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "AssetBalancePortfolio", "AssetBalancePortfolio\AssetBalancePortfolio.vcxproj", "{C5CA5006-C4DF-40A2-B88D-61D50C20D9FE}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MovingAverageStrategy", "MovingAverageStrategy\MovingAverageStrategy.vcxproj", "{830CCBAF-0329-42B5-B980-9F715D269564}"
-EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "LeveragedSwingTradeStrategy", "LeveragedSwingTradeStrategy\LeveragedSwingTradeStrategy.vcxproj", "{2F3AD2FF-8DFA-4AE3-953D-C9D563E280F0}"
-	ProjectSection(ProjectDependencies) = postProject
-		{35C49ADC-5AC8-455A-BD22-3C45D9A993E1} = {35C49ADC-5AC8-455A-BD22-3C45D9A993E1}
-	EndProjectSection
-EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MAPortfolioRebalance", "MAPortfolioRebalance\MAPortfolioRebalance.vcxproj", "{188F7A00-6876-4D8E-867C-BE585D777B65}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -58,22 +51,6 @@ Global
 		{830CCBAF-0329-42B5-B980-9F715D269564}.Release|x64.Build.0 = Release|x64
 		{830CCBAF-0329-42B5-B980-9F715D269564}.Release|x86.ActiveCfg = Release|Win32
 		{830CCBAF-0329-42B5-B980-9F715D269564}.Release|x86.Build.0 = Release|Win32
-		{2F3AD2FF-8DFA-4AE3-953D-C9D563E280F0}.Debug|x64.ActiveCfg = Debug|x64
-		{2F3AD2FF-8DFA-4AE3-953D-C9D563E280F0}.Debug|x64.Build.0 = Debug|x64
-		{2F3AD2FF-8DFA-4AE3-953D-C9D563E280F0}.Debug|x86.ActiveCfg = Debug|Win32
-		{2F3AD2FF-8DFA-4AE3-953D-C9D563E280F0}.Debug|x86.Build.0 = Debug|Win32
-		{2F3AD2FF-8DFA-4AE3-953D-C9D563E280F0}.Release|x64.ActiveCfg = Release|x64
-		{2F3AD2FF-8DFA-4AE3-953D-C9D563E280F0}.Release|x64.Build.0 = Release|x64
-		{2F3AD2FF-8DFA-4AE3-953D-C9D563E280F0}.Release|x86.ActiveCfg = Release|Win32
-		{2F3AD2FF-8DFA-4AE3-953D-C9D563E280F0}.Release|x86.Build.0 = Release|Win32
-		{188F7A00-6876-4D8E-867C-BE585D777B65}.Debug|x64.ActiveCfg = Debug|x64
-		{188F7A00-6876-4D8E-867C-BE585D777B65}.Debug|x64.Build.0 = Debug|x64
-		{188F7A00-6876-4D8E-867C-BE585D777B65}.Debug|x86.ActiveCfg = Debug|Win32
-		{188F7A00-6876-4D8E-867C-BE585D777B65}.Debug|x86.Build.0 = Debug|Win32
-		{188F7A00-6876-4D8E-867C-BE585D777B65}.Release|x64.ActiveCfg = Release|x64
-		{188F7A00-6876-4D8E-867C-BE585D777B65}.Release|x64.Build.0 = Release|x64
-		{188F7A00-6876-4D8E-867C-BE585D777B65}.Release|x86.ActiveCfg = Release|Win32
-		{188F7A00-6876-4D8E-867C-BE585D777B65}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

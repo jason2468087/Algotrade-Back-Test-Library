@@ -22,7 +22,7 @@
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
     <ProjectGuid>{c5ca5006-c4df-40a2-b88d-61d50c20d9fe}</ProjectGuid>
-    <RootNamespace>SecurityBackTestPlatform</RootNamespace>
+    <RootNamespace>AssetBalancePortfolio</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
     <ProjectName>AssetBalancePortfolio</ProjectName>
   </PropertyGroup>

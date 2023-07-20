@@ -25,14 +25,14 @@ void dailyAction(Portfolio& portfolio, ControlPanel* controlPanel, Market& marke
     Price mAvg5{ index.movingAverage(controlPanel->getToday(),5,"SPY") };
     Price spyPrice{ market.getPrice("SPY") };
     
-    if (!isEnteredMarket && mAvg5 > mAvg50)
+    if (!isEnteredMarket && spyPrice > mAvg50)
     {
         int amount{ portfolio.getCash() / spyPrice };
         controlPanel->buyStock(Order{ MARKET_ORDER,"SPY",amount });
 
         isEnteredMarket = true;
     }
-    else if (isEnteredMarket && mAvg5 < mAvg50)
+    else if (isEnteredMarket && spyPrice < mAvg50)
     {
         int amount{ portfolio.getShareHolded("SPY")};
         controlPanel->sellStock(Order{ MARKET_ORDER,"SPY",amount });
@@ -47,6 +47,8 @@ int main()
 
     testPanel.setInitAction(initAction);
     testPanel.setDailyTwiceAction(dailyAction);
+
+    testPanel.getPortfolioRef().setCash(initWealth);
 
     try
     {

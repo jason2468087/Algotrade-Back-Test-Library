@@ -16,15 +16,15 @@ Date end{ 20,6,2023 };
 
 ControlPanel testPanel;
 
-Price initWealth{ 100000_USD };
+Price initWealth{ 500000_USD };
 Price salary{ 10000_USD };
 
-int stockCnt = 5;
-enum { SPY, VT, BND, GLD, TQQQ };
-std::string sym[] = {"SPY","VT","BND","GLD","TQQQ"};
-double percent[] = { 1.0,0.0,0.0,0.0,0.0 };
-double threashold[] = { 0.01,0.01,0.01,0.01,0.01 };
-double deviation[] = { 0,0,0,0,0 };
+int stockCnt = 4;
+enum { SPY, BND, GLD, TQQQ };
+std::string sym[] = {"SPY","BND","GLD","TQQQ"};
+double percent[] = { 0.55,0.3,0.05,0.1 };
+double threashold[] = { 0.01,0.01,0.01,0.01 };
+double deviation[] = { 0,0,0,0 };
 
 void initialAction(Portfolio& portfolio, ControlPanel* controlPanel, Market& market, Index& index)
 {
@@ -77,8 +77,8 @@ void buyLowestWithSalary(Portfolio& portfolio, ControlPanel* controlPanel, Marke
 
 void rebalance(Portfolio& portfolio, ControlPanel* controlPanel, Market& market)
 {
-    bool isSell[] = { 0,0,0,0,0 };
-    bool isBuy[] = { 0,0,0,0,0 };
+    bool isSell[] = { 0,0,0,0 };
+    bool isBuy[] = { 0,0,0,0 };
 
     for (int i = 0; i < stockCnt; i++)
     {
@@ -92,15 +92,11 @@ void rebalance(Portfolio& portfolio, ControlPanel* controlPanel, Market& market)
         balanceSell(GLD, portfolio, controlPanel);
     if (isSell[BND])
         balanceSell(BND, portfolio, controlPanel);
-    if (isSell[VT])
-        balanceSell(VT, portfolio, controlPanel);
     if (isSell[SPY])
         balanceSell(SPY, portfolio, controlPanel);
 
     if (isBuy[SPY])
         balanceBuy(SPY, portfolio, controlPanel);
-    if (isBuy[VT])
-        balanceBuy(VT, portfolio, controlPanel);
     if (isBuy[BND])
         balanceBuy(BND, portfolio, controlPanel);
     if (isBuy[GLD])
