@@ -9,7 +9,7 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SecurityLibraryTestSoftware
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "AssetBalancePortfolio", "AssetBalancePortfolio\AssetBalancePortfolio.vcxproj", "{C5CA5006-C4DF-40A2-B88D-61D50C20D9FE}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MovingAverageStrategy", "MovingAverageStrategy\MovingAverageStrategy.vcxproj", "{830CCBAF-0329-42B5-B980-9F715D269564}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MovingAverageStrategy", "MovingAverageStrategy\MovingAverageStrategy.vcxproj", "{AFE99072-90FE-49BE-A829-C254C221AF0F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -43,14 +43,14 @@ Global
 		{C5CA5006-C4DF-40A2-B88D-61D50C20D9FE}.Release|x64.Build.0 = Release|x64
 		{C5CA5006-C4DF-40A2-B88D-61D50C20D9FE}.Release|x86.ActiveCfg = Release|Win32
 		{C5CA5006-C4DF-40A2-B88D-61D50C20D9FE}.Release|x86.Build.0 = Release|Win32
-		{830CCBAF-0329-42B5-B980-9F715D269564}.Debug|x64.ActiveCfg = Debug|x64
-		{830CCBAF-0329-42B5-B980-9F715D269564}.Debug|x64.Build.0 = Debug|x64
-		{830CCBAF-0329-42B5-B980-9F715D269564}.Debug|x86.ActiveCfg = Debug|Win32
-		{830CCBAF-0329-42B5-B980-9F715D269564}.Debug|x86.Build.0 = Debug|Win32
-		{830CCBAF-0329-42B5-B980-9F715D269564}.Release|x64.ActiveCfg = Release|x64
-		{830CCBAF-0329-42B5-B980-9F715D269564}.Release|x64.Build.0 = Release|x64
-		{830CCBAF-0329-42B5-B980-9F715D269564}.Release|x86.ActiveCfg = Release|Win32
-		{830CCBAF-0329-42B5-B980-9F715D269564}.Release|x86.Build.0 = Release|Win32
+		{AFE99072-90FE-49BE-A829-C254C221AF0F}.Debug|x64.ActiveCfg = Debug|x64
+		{AFE99072-90FE-49BE-A829-C254C221AF0F}.Debug|x64.Build.0 = Debug|x64
+		{AFE99072-90FE-49BE-A829-C254C221AF0F}.Debug|x86.ActiveCfg = Debug|Win32
+		{AFE99072-90FE-49BE-A829-C254C221AF0F}.Debug|x86.Build.0 = Debug|Win32
+		{AFE99072-90FE-49BE-A829-C254C221AF0F}.Release|x64.ActiveCfg = Release|x64
+		{AFE99072-90FE-49BE-A829-C254C221AF0F}.Release|x64.Build.0 = Release|x64
+		{AFE99072-90FE-49BE-A829-C254C221AF0F}.Release|x86.ActiveCfg = Release|Win32
+		{AFE99072-90FE-49BE-A829-C254C221AF0F}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
