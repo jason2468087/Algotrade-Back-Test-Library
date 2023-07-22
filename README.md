@@ -48,12 +48,12 @@ Price salary{ /*...*/ }; // Monthly Salary in USD, e.g. 1200_USD
 
 void initAction(Portfolio& portfolio, ControlPanel* controlPanel, Market& market, Index& index)
 {
-    // Action when entering market
+    // Trading Strategy: Action when entering market
 }
 
 void dailyAction(Portfolio& portfolio, ControlPanel* controlPanel, Market& market, Index& index)
 {
-    // Action done every day
+    // Trading Strategy: Action done every day
 }
 
 int main()
@@ -80,5 +80,23 @@ int main()
     return 0;
 }
 ```
-As you can see, we define our trading strategy inside a function and parse our strategy into the library as an input argument. These strategy function must follow the format given in template as they are a specific function pointer type called "Action".
+To run the simulation, setup the library by providing parameters and "Action" function through setter function. Then call run().
 
+As you can see, we define our trading strategy inside a function and parse our strategy into the library as an input argument. These strategy function must follow the format given in template as they are a specific function pointer type called "Action".
+___
+Within "Action" function, we can buy/sell stocks, get market information, get portfolio status and use financial indexes. These features are provided by the classes in input argument of the function.
+
+The functionalities of the 4 classes are:
+| Class         | Description                                                              |
+| ------------- |:---------------------:                                                   |
+| Portfolio     | Contain investment portfolio data (e.g. stocks holded, cash amount, ...) |
+| Control Panel | Use this class to perform trading action                                 |
+| Market        | Store historical market data                                             |
+| Index         | A class of math function about financial indexes                         |
+
+```C++
+void dailyAction(Portfolio& portfolio, ControlPanel* controlPanel, Market& market, Index& index)
+{
+    // Trading Strategy: Action done every day
+}
+```
