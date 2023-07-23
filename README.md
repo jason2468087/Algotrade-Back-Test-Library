@@ -94,9 +94,44 @@ The functionalities of the 4 classes are:
 | Market        | Store historical market data                                             |
 | Index         | A class of math function about financial indexes                         |
 
+Here are commonly used function in "Action" function:
 ```C++
 void dailyAction(Portfolio& portfolio, ControlPanel* controlPanel, Market& market, Index& index)
 {
-    // Trading Strategy: Action done every day
+    // Portfolio
+    int spyCnt = portfolio.getShareHolded("SPY");
+    Price cash = portfolio.getCash();
+    Price asset = portfolio.getTotalWorth();
+
+    // ControlPanel
+    controlPanel->buyStock(Order{ MARKET_ORDER,"SPY",10 });
+    controlPanel->sellStock(Order{ MARKET_ORDER,"SPY",5 });
+    controlPanel->receiveSalary(1200_USD);
+    Date today = controlPanel->getToday();
+
+    // Market
+    market.observe("SPY");
+    Price spy_today = market.getPrice("SPY");
+
+    // Index
+    Price ma_5 = index.movingAverage(controlPanel->getToday(),5,"SPY")
 }
 ```
+For detailed example, please check **MovingAverageStrategy** and **AssetBalancePortfolio** project.
+
+### Custom Data Types and Operator Overload
+The library has defined some custom data type which user must follow.
+| Data Type     | Definition                                        | Description                                                                |
+| ------------- |:-------------------------------------------------:|:--------------------------------------------------------------------------:|
+| Action        |void(*)(Portfolio&, ControlPanel*, Market&, Index&)| Funcion pointer which point to a function containing trading strategy.     |
+| Price         |int                                                | Represent current in USD, the value must be followed with a postfix "_USD" |
+| Symbol        |std::string                                        | Represent symbol of a stock.                                               |
+| Date          |struct Date{int d, int m, int y}                   | Present date.                                                              |
+| Order         |struct Order{int, symbol, int}                     | Present buy or sell order.                                                 |
+
+| Operator      | Return | Description                                                                |
+| ------------- |:------:|:--------------------------------------------------------------------------:|
+| _USD          |Price   | Convert integer to custom curency type (10_USD = 1000 in interger)         |
+
+### Historical Data
+The library need historical data of the stock to simulate the profit of the startegy. Unfortunately, you need to prepare your own data to feed to the system. The library provided 
