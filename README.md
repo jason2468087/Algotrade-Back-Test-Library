@@ -134,4 +134,10 @@ The library has defined some custom data type which user must follow.
 | _USD          |Price   | Convert integer to custom curency type (10_USD = 1000 in interger)         |
 
 ### Historical Data
-The library need historical data of the stock to simulate the profit of the startegy. Unfortunately, you need to prepare your own data to feed to the system. The library provided 
+The library need historical data of the stock to simulate the profit of the startegy. Unfortunately, you need to prepare your own data to feed to the system. Still, the system can read data file downloaded from Yahoo Finance. So, it is recommendded that user should download data from Yahoo Finance to use this system.
+
+The library provided a folder(SecurityBackTestLibrary/Historial Data) for holding your historical data. It require two CSV file with stock symbol as its file name. One file should store daily price record and another store dividend record. The formal of both file should be the same as the one download from Yahoo Finance. The price file are placed in "Historial Data/Price" folder whild dividend file go to "Historial Data/Dividend".
+
+![alt text](https://github.com/jason2468087/Algotrade-Back-Test-Library/blob/master/img/price%20folder.png?raw=true)
+
+![alt text](https://github.com/jason2468087/Algotrade-Back-Test-Library/blob/master/img/dividend%20folder.png?raw=true)
